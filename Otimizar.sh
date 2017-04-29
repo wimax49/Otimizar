@@ -1,7 +1,8 @@
-#!/bin/bash
+#/bin/bash
 #	
 #
 # 
+
 #verifica se o usário é root
 if [[ `id -u` -ne 0 ]]; then
 	echo

@@ -1,22 +1,14 @@
 #!/bin/bash
-#	30/11/2015
-#	Script irá tentar otimizar o sistema operacional
-#	Diminuindo a prioridade de uso do SWAP e instalando
-#	alguns programas Prelink e Preload
+#	
 #
-#	Flávio Oliveira (Flávio Dicas)
-# http://www.flaviodeoliveira.com.br
-#	http://www.youtube.com/flaviodicas
-#	https://github.com/oliveiradeflavio
-#	oliveiradeflavio
+# 
 
 #verifica se o usário é root
-if [[ `id -u` -ne 0 ]]; then
-	echo
-		echo "Você precisa ter poderes administrativos (root)"
-		echo "O script está sendo finalizado ..."
-		sleep 4
-		exit
+
+if [ $(id -u) != 0 ]
+then
+echo "Execute o script como root"
+exit
 fi
 
 #verifica o gerenciador de pacotes da distro (apt-get)
@@ -131,6 +123,9 @@ prelink=$(grep "PRELINKING=unknown" /etc/default/prelink)
 clear
 echo "#######################################"
 echo "# Bem vindo ao script Otimiza Sistema #"
+echo "#      suporte e manutenção Vps       #"
+echo "# contato telegram:thallesdecarvalho  #"
+echo "#                                     #"  
 echo "#######################################"
 echo
 read -n1 -p "Para continuar escolha s(sim) ou n(não)  " escolha

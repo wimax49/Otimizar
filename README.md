@@ -1,0 +1,2 @@
+# Otimizar
+Otimizar Linux

@@ -1,16 +1,6 @@
 #!/bin/bash
 #	
 #
-# 
-
-#verifica se o usário é root
-if [[ `id -u` -ne 0 ]]; then
-	echo
-		echo "Você precisa ter poderes administrativos (root)"
-		echo "O script está sendo finalizado ..."
-		sleep 4
-		exit
-fi
 
 #verifica o gerenciador de pacotes da distro (apt-get)
 packagemanager()

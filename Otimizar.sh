@@ -2,13 +2,13 @@
 #	30/11/2015
 #	Script irá tentar otimizar o sistema operacional
 #	Diminuindo a prioridade de uso do SWAP e instalando
-#	
+#	alguns programas Prelink e Preload
 #
-#	
-#
-#	
-#	
-#	
+#	Flávio Oliveira (Flávio Dicas)
+# http://www.flaviodeoliveira.com.br
+#	http://www.youtube.com/flaviodicas
+#	https://github.com/oliveiradeflavio
+#	oliveiradeflavio
 
 #verifica se o usário é root
 if [[ `id -u` -ne 0 ]]; then
